@@ -20,7 +20,7 @@ const sunucu = http.createServer((istek, yanit) => {
   } 
   else if (istek.url === "/hakkimda") {
     yanit.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
-    yanit.end('<h1>Hakkımda</h1><p>Merhaba, ben Hasan Bal. Bilgisayar Mühendisliği öğrencisiyim.</p>');
+    yanit.end('<h1>Hakkımda</h1><p>Merhaba, ben Hasan Bal - Bilgisayar Muhendisligi. Bilgisayar Mühendisliği öğrencisiyim.</p>');
   } 
   else if (istek.url === "/api/ders") {
     yanit.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
