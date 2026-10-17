@@ -16,7 +16,10 @@ const sunucu = http.createServer((istek, yanit) => {
 
   if (istek.url === "/") {
     yanit.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
+< HEAD
     yanit.end('<h1>Web Sitemize Hos Geldiniz</h1><p><a href="/hakkimda">Hakkımda sayfasına git</a></p>');
+    yanit.end('<h1>Hos Geldiniz</h1><p><a href="/hakkimda">Hakkımda sayfasına git</a></p>');
+> baslik
   } 
   else if (istek.url === "/hakkimda") {
     yanit.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
